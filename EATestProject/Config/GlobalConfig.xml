@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<EAAutoFramework>
+  <RunSettings>
+    <AUT>https://portal.tiqri.com/Account/Login</AUT>
+    <BrowserType>Chrome</BrowserType>
+  </RunSettings>
+  
+</EAAutoFramework>
