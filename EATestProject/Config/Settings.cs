@@ -1,9 +1,4 @@
-﻿using EAAutoFramework.Base;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿
 using static EAAutoFramework.Base.Browser;
 
 namespace EAAutoFramework.Config
@@ -18,8 +13,8 @@ namespace EAAutoFramework.Config
 
         public static BrowserType BrowserType { get; set; }
 
-        public static string Islog { get; set; }
+       // public static string Islog { get; set; }
 
-        public static string LogPath { get; set; }
+       // public static string LogPath { get; set; }
     }
 }
