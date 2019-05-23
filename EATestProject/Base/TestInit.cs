@@ -1,11 +1,6 @@
 ﻿using EAAutoFramework.Config;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.IE;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using static EAAutoFramework.Base.Browser;
 
 namespace EAAutoFramework.Base

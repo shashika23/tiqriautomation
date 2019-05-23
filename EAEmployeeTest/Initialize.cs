@@ -1,19 +1,22 @@
 ﻿using EAAutoFramework.Base;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using TechTalk.SpecFlow;
 using static EAAutoFramework.Base.Browser;
 
 namespace EAEmployeeTest
 {
+    [Binding]
     public class Initialize : TestInit
     {
 
         public Initialize() : base(BrowserType.Chorme) {
             InitializeSettings();
             NavigateSite();
+        }
+
+        [BeforeFeature]
+        public static void TestStart()
+        {
+            Initialize init = new Initialize();
         }
     }
 }

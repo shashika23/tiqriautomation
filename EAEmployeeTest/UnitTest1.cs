@@ -13,7 +13,7 @@ namespace EAEmployeeTest
 
             LoginPage loginPage = new LoginPage();
             MyLeavePage myLeavePage = new MyLeavePage();
-            HomePage homePage = loginPage.Login("Shashika", "use your password");
+            HomePage homePage = loginPage.Login("use your name", "use your pwd");
             homePage.navigatetoMyLeavePage();
          
  
