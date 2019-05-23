@@ -88,14 +88,14 @@ namespace EAEmployeeTest.Feature
         }
         
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Verify the user is allowed to enter application using valid user name and the pas" +
-            "sword")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Verify the user is allowed to enter to the application using valid user name and " +
+            "the password")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Login")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("Test")]
-        public virtual void VerifyTheUserIsAllowedToEnterApplicationUsingValidUserNameAndThePassword()
+        public virtual void VerifyTheUserIsAllowedToEnterToTheApplicationUsingValidUserNameAndThePassword()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Verify the user is allowed to enter application using valid user name and the pas" +
-                    "sword", null, new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Verify the user is allowed to enter to the application using valid user name and " +
+                    "the password", null, new string[] {
                         "Test"});
 #line 4
 this.ScenarioInitialize(scenarioInfo);
