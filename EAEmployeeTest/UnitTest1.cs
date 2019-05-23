@@ -11,6 +11,7 @@ namespace EAEmployeeTest
         [TestMethod]
         public void Login() {
 
+            // write the page using generic class.
             LoginPage loginPage = new LoginPage();
             MyLeavePage myLeavePage = new MyLeavePage();
             HomePage homePage = loginPage.Login("use your name", "use your pwd");
