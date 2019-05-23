@@ -7,7 +7,7 @@ namespace EAEmployeeTest
     [Binding]
     public class Initialize : TestInit
     {
-
+        //init
         public Initialize() : base(BrowserType.Chorme) {
             InitializeSettings();
             NavigateSite();
