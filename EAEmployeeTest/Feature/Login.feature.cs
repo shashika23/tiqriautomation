@@ -107,8 +107,8 @@ this.ScenarioInitialize(scenarioInfo);
                         "UserName",
                         "Password"});
             table1.AddRow(new string[] {
-                        "your name",
-                        "your wpd"});
+                        "Shashika",
+                        "Zn1heZ"});
 #line 6
  testRunner.When("I enter username and the password and i clicked the login button", ((string)(null)), table1, "When ");
 #line 9

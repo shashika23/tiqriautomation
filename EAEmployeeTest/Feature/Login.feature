@@ -5,5 +5,5 @@ Scenario: Verify the user is allowed to enter to the application using valid use
 	Given I have navigated to the login screen
 	When I enter username and the password and i clicked the login button
 	| UserName | Password |
-	| your name| your wpd|
+	| Shashika | Zn1heZ   |
 	Then I should click the myleave button

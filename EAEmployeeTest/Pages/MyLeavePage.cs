@@ -14,8 +14,8 @@ namespace EAEmployeeTest.Pages
 
 
         public HomePage submitLeaveData() {
-            btnSubmit.Click();
-            return new HomePage();
+           // btnSubmit.Click();
+            return GetInstance<HomePage>();
         }
         
      }

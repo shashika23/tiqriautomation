@@ -18,15 +18,23 @@ namespace EAEmployeeTest.Steps
         public void WhenIEnterUsernameAndThePassword(Table table)
         {
             dynamic data = table.CreateDynamicInstance();
-            LoginPage loginPage = new LoginPage();
-            HomePage homePage = loginPage.Login(data.UserName, data.Password);
+            CurrentPage = GetInstance<LoginPage>();
+            CurrentPage = CurrentPage.As<LoginPage>().Login(data.UserName, data.Password);
+            
+
+           /* LoginPage loginPage = new LoginPage();
+            HomePage homePage = loginPage.Login(data.UserName, data.Password);*/
         }
 
         [Then(@"I should click the myleave button")]
         public void ThenIShouldTheSeeTheMyleaveButton()
         {
-            HomePage homePage = new HomePage();
-            MyLeavePage myLeavePage = homePage.navigatetoMyLeavePage();
+
+            CurrentPage = CurrentPage.As<HomePage>().navigatetoMyLeavePage();
+            CurrentPage.As<MyLeavePage>().submitLeaveData();
+
+            /*HomePage homePage = new HomePage();
+            MyLeavePage myLeavePage = homePage.navigatetoMyLeavePage();*/
 
         }
     }

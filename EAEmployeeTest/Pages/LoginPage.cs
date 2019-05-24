@@ -24,7 +24,7 @@ namespace EAEmployeeTest.Pages
             txtUserName.SendKeys(userName);
             txtPassword.SendKeys(password);
             btnLogin.Click();
-            return new HomePage();
+            return GetInstance<HomePage>();
         }
 
     }

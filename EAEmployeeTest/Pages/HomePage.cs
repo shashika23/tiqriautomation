@@ -4,7 +4,7 @@ using OpenQA.Selenium.Support.PageObjects;
 
 namespace EAEmployeeTest.Pages
 {
-    class HomePage:BasePage{
+    class HomePage : BasePage{
 
     
         [FindsBy(How = How.CssSelector, Using = "div#body a:nth-child(4) > img")]
@@ -13,7 +13,7 @@ namespace EAEmployeeTest.Pages
 
         public MyLeavePage navigatetoMyLeavePage() {
             lnkMyLeave.Click();
-            return new MyLeavePage();
+            return GetInstance<MyLeavePage>();
 
         }
 

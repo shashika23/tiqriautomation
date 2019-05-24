@@ -12,12 +12,18 @@ namespace EAEmployeeTest
         public void Login() {
 
             // write the page using generic class.
-            LoginPage loginPage = new LoginPage();
-            MyLeavePage myLeavePage = new MyLeavePage();
-            HomePage homePage = loginPage.Login("use your name", "use your pwd");
-            homePage.navigatetoMyLeavePage();
-         
- 
+            /* LoginPage loginPage = new LoginPage();
+             MyLeavePage myLeavePage = new MyLeavePage();
+             HomePage homePage = loginPage.Login("use your name", "use your pwd");
+             homePage.navigatetoMyLeavePage();*/
+
+            CurrentPage = GetInstance<LoginPage>();
+            CurrentPage =  CurrentPage.As<LoginPage>().Login("shashika ", "Zn1heZ");
+            CurrentPage = CurrentPage.As<HomePage>().navigatetoMyLeavePage();
+            CurrentPage.As<MyLeavePage>().submitLeaveData();
+
+
+
         }
     }
 }
