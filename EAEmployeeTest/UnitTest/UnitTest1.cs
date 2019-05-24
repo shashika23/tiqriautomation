@@ -11,7 +11,7 @@ namespace EAEmployeeTest
         public void Login() {
                       
             CurrentPage = GetInstance<LoginPage>();
-            CurrentPage = CurrentPage.As<LoginPage>().Login("shashika ", "Zn1heZ");
+            CurrentPage = CurrentPage.As<LoginPage>().Login("shashika ", "v4@XBU");
             CurrentPage = CurrentPage.As<HomePage>().navigatetoMyLeavePage();
             CurrentPage.As<MyLeavePage>().submitLeaveData();
 
