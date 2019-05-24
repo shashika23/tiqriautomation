@@ -18,7 +18,7 @@ namespace EAEmployeeTest.SpecFlowTest
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "2.4.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute()]
-    public partial class LoginFeature
+    public partial class LoginFeatureFeature
     {
         
         private static TechTalk.SpecFlow.ITestRunner testRunner;
@@ -44,7 +44,8 @@ namespace EAEmployeeTest.SpecFlowTest
         public static void FeatureSetup(Microsoft.VisualStudio.TestTools.UnitTesting.TestContext testContext)
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner(null, 0);
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Login", null, ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Login feature", "\tIn order to avoid silly mistakes\r\n\tAs a math idiot\r\n\tI want to be told the sum o" +
+                    "f two numbers", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -59,9 +60,9 @@ namespace EAEmployeeTest.SpecFlowTest
         public virtual void TestInitialize()
         {
             if (((testRunner.FeatureContext != null) 
-                        && (testRunner.FeatureContext.FeatureInfo.Title != "Login")))
+                        && (testRunner.FeatureContext.FeatureInfo.Title != "Login feature")))
             {
-                global::EAEmployeeTest.SpecFlowTest.LoginFeature.FeatureSetup(null);
+                global::EAEmployeeTest.SpecFlowTest.LoginFeatureFeature.FeatureSetup(null);
             }
         }
         
@@ -88,16 +89,14 @@ namespace EAEmployeeTest.SpecFlowTest
         }
         
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Verify the user is allowed to enter to the application using valid user name and " +
-            "the password")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Login")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("Test")]
-        public virtual void VerifyTheUserIsAllowedToEnterToTheApplicationUsingValidUserNameAndThePassword()
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("01 Verify the user is allowed to enter to the application using valid user name a" +
+            "nd the password")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Login feature")]
+        public virtual void _01VerifyTheUserIsAllowedToEnterToTheApplicationUsingValidUserNameAndThePassword()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Verify the user is allowed to enter to the application using valid user name and " +
-                    "the password", null, new string[] {
-                        "Test"});
-#line 4
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("01 Verify the user is allowed to enter to the application using valid user name a" +
+                    "nd the password", null, ((string[])(null)));
+#line 8
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
 #line hidden
@@ -106,12 +105,12 @@ this.ScenarioInitialize(scenarioInfo);
                         "Password"});
             table1.AddRow(new string[] {
                         "Shashika",
-                        "Zn1heZ"});
-#line 6
- testRunner.Given("I enter username and the password and i clicked the login button", ((string)(null)), table1, "Given ");
-#line 9
- testRunner.When("I should click the myleave button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+                        "v4@XBU"});
 #line 10
+ testRunner.Given("I enter username and the password and i clicked the login button", ((string)(null)), table1, "Given ");
+#line 13
+ testRunner.When("I should click the myleave button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 14
  testRunner.Then("I see the my leave", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
