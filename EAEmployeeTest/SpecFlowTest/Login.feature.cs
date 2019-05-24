@@ -10,7 +10,7 @@
 // ------------------------------------------------------------------------------
 #region Designer generated code
 #pragma warning disable
-namespace EAEmployeeTest.Feature
+namespace EAEmployeeTest.SpecFlowTest
 {
     using TechTalk.SpecFlow;
     
@@ -61,7 +61,7 @@ namespace EAEmployeeTest.Feature
             if (((testRunner.FeatureContext != null) 
                         && (testRunner.FeatureContext.FeatureInfo.Title != "Login")))
             {
-                global::EAEmployeeTest.Feature.LoginFeature.FeatureSetup(null);
+                global::EAEmployeeTest.SpecFlowTest.LoginFeature.FeatureSetup(null);
             }
         }
         

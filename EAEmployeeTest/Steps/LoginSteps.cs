@@ -21,10 +21,8 @@ namespace EAEmployeeTest.Steps
         [When(@"I should click the myleave button")]
         public void ThenIShouldTheSeeTheMyleaveButton()
         {
-
             CurrentPage = CurrentPage.As<HomePage>().navigatetoMyLeavePage();
             CurrentPage.As<MyLeavePage>().submitLeaveData();
-
         }
 
         [Then(@"I see the my leave")]

@@ -17,9 +17,7 @@ namespace EAEmployeeTest.Pages
         [FindsBy(How = How.ClassName, Using = "button-blue")]
         private IWebElement btnLogin { get; set; }
 
-        
-
-
+       
         public HomePage Login(string userName, string password) {
             txtUserName.SendKeys(userName);
             txtPassword.SendKeys(password);

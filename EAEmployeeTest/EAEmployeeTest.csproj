@@ -76,7 +76,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Feature\Login.feature.cs">
+    <Compile Include="SpecFlowTest\Login.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Login.feature</DependentUpon>
@@ -86,12 +86,12 @@
     <Compile Include="Pages\LoginPage.cs" />
     <Compile Include="Pages\MyLeavePage.cs" />
     <Compile Include="Steps\LoginSteps.cs" />
-    <Compile Include="UnitTest1.cs" />
+    <Compile Include="UnitTest\UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="Feature\Login.feature">
+    <None Include="SpecFlowTest\Login.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>Login.feature.cs</LastGenOutput>
     </None>
@@ -103,9 +103,7 @@
       <Name>EAAutoFramework</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Test\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
