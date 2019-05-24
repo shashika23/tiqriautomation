@@ -100,8 +100,6 @@ namespace EAEmployeeTest.Feature
 #line 4
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
-#line 5
- testRunner.Given("I have navigated to the login screen", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
             TechTalk.SpecFlow.Table table1 = new TechTalk.SpecFlow.Table(new string[] {
                         "UserName",
@@ -110,9 +108,11 @@ this.ScenarioInitialize(scenarioInfo);
                         "Shashika",
                         "Zn1heZ"});
 #line 6
- testRunner.When("I enter username and the password and i clicked the login button", ((string)(null)), table1, "When ");
+ testRunner.Given("I enter username and the password and i clicked the login button", ((string)(null)), table1, "Given ");
 #line 9
- testRunner.Then("I should click the myleave button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.When("I should click the myleave button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 10
+ testRunner.Then("I see the my leave", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }

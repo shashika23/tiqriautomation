@@ -2,7 +2,5 @@
 <EAAutoFramework>
   <RunSettings>
     <AUT>https://portal.tiqri.com/Account/Login</AUT>
-    <BrowserType>Chrome</BrowserType>
-  </RunSettings>
-  
+  </RunSettings>  
 </EAAutoFramework>

@@ -9,8 +9,8 @@ namespace EAEmployeeTest
     {
         
         public Initialize() : base(BrowserType.Chorme) {
-            InitializeSettings();
-            NavigateSite();
+           InitializeSettings();
+           NavigateSite();
         }
 
         [BeforeFeature]
