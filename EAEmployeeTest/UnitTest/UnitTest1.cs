@@ -4,7 +4,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace EAEmployeeTest
 {
-    [TestClass]
+ /*   [TestClass]
     public class UnitTest1 : Initialize
     {
         [TestMethod]
@@ -16,6 +16,6 @@ namespace EAEmployeeTest
             CurrentPage.As<MyLeavePage>().submitLeaveData();
 
         }
-    }
+    }*/
     
 }

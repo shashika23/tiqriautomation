@@ -5,7 +5,7 @@ Feature: Login feature
 	I want to be told the sum of two numbers
 
 
-Scenario:01 Verify the user is allowed to enter to the application using valid user name and the password
+Scenario: 01 Verify the user is allowed to enter to the application using valid user name and the password
 	
 	Given I enter username and the password and i clicked the login button
 	| UserName | Password |
